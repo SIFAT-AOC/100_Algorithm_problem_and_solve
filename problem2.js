@@ -16,3 +16,14 @@ function sum(peram1,peram2){
     return peram1 + peram2;
 }
 console.log(sum(1,2));
+
+function totalSum(...peram1){
+    let total = 0 
+    peram1.forEach((perElement)=>{
+        total+=perElement;
+    })
+    return total
+}
+
+console.log(
+    totalSum(1,2,5,6));
