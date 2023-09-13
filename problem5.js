@@ -5,11 +5,12 @@ function primeSum(prNumber){
             if(i===j){
                 primetotal+=i;
             }
+            else if(i%j===0){
+                break;
+            }
         }
-        if(i%j===0){
-            break;
-        }
+       
        }
-       return primetotal
+       return primetotal;
 }
 console.log(primeSum(20));
